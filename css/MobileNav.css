@@ -1,0 +1,72 @@
+
+#menubar {
+    width:100%;
+    background-color:#444;
+    color: #fff;
+    padding: 10px;
+    margin: 0px;
+}
+
+#button {
+    cursor:pointer;
+    padding-top: 20px;
+    padding-left: 10px;
+    font-size: .9em;
+    font-weight: normal;
+    width: 100px;
+    float: left;
+    display: block;
+    margin: 0px;
+}
+
+#menu, #page {
+    display:inline;
+    padding: 0px;
+    margin: 0px;
+}
+#menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+#menu li a {
+    padding: 10px;
+    padding-left: 20px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: .8em;
+}
+
+#page {
+    background-color: #fff;
+    width:100%;
+    left: 0px;
+    display: block;
+    height: 100%;
+    -webkit-box-shadow:  -5px 0px 4px 0px rgba(0, 0, 0, 0.2);
+        moz-box-shadow:  -5px 0px 4px 0px rgba(0, 0, 0, 0.2);
+          o-box-shadow:  -5px 0px 4px 0px rgba(0, 0, 0, 0.2);
+            box-shadow:  -5px 0px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+#menu {
+    position: fixed;
+    float:left;
+    width: 200px;
+    height: 100%;
+    padding-top: 70px;
+    background-color: #000;
+}
+
+#menu li {
+    background-color:#1a353f;
+    border-bottom: 2px solid #000;
+    list-style: none;
+}
+#menu li.dark {
+    background-color: #0e2226;
+}
+

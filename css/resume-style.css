@@ -1,0 +1,107 @@
+
+.box h3 {color: #E5E9F5; font-weight: lighter; font-size: 1.5em; margin: .5em 0 1em 0;}
+.box {margin: .5em 0;}
+
+
+div.center {margin: 1em auto;}
+.center h1 {color: #4F60B2; font-size: 3em;}
+
+
+#overview, #contact, #education, #skills, #experience{ 
+    background-image: linear-gradient(top,  #4F60B2,  #4F60B2 45px, transparent 0%, transparent 100%);
+    background-image: -webkit-linear-gradient(top,  #4F60B2,  #4F60B2 45px, transparent 0%, transparent 100%);
+    padding-bottom: 0;
+}
+#overview h3, #contact h3, #education h3, #skills h3, #experience h3 {
+    margin: 0; 
+    margin-bottom: .25em;
+}
+
+#contact {
+    width: 42%;
+    padding-bottom: 1.3em;
+ }
+#contact img {
+    max-width: 50px;
+ }
+#overview p {padding: .5em 1em; padding-top: 0;}
+
+#education {
+    width: 55%;
+    float: right;
+    }
+#education img {
+    max-width: 100px;
+    }
+#m {
+    width: 60px;
+    display: block;
+    margin: auto;
+    }
+#education p {text-align: center;}
+#education p.smaller {text-align: center;}
+#education img {max-width: 80px;}
+.skill-list-container {
+    padding-top: 1em;}
+
+#design, #psychology {display: inline-block; width: 40%; text-align: center;}
+#psychology {float: right;}
+#plus {display: inline-block; width: 40px; text-align: center; vertical-align: top; margin-top: 2em;}
+
+
+#skills img {max-width: 70px;}
+div.skill {
+   display: block;
+   margin: auto;
+   }
+
+#experience {padding-bottom: 2em;}
+
+.left {
+    width: 64%;
+    display: inline-block;
+}
+.right {
+    width: 34%;
+    float: right;
+    vertical-align: top;
+    }
+
+.skill {display: inline-block; text-align: left; width: 90%;}
+.skill img {width: 25%; display: inline-block; }
+.skill p {text-align: left; display: inline-block; width: 65%; vertical-align: top; padding-top: .5em; margin-right: 0;}
+.blue-text {color: #4F60B2; font-size: 1.2em;}
+.seventy-px-wide {width: 70px;}
+.left-mini, .list {display: inline-block; vertical-align: top;}
+.left-mini {width: 18%; text-align: right; margin-right: 1em;}
+.list {text-align: left; width: 70%;}
+.list ul{margin: 0; list-style-image: url(../images/icons/blue-diamond.png);}
+
+.contact-list-container .skill {padding: .25em 0;}
+
+@media only screen and (max-width : 830px) {
+    .center h1 {font-size: 2.5em;}
+    div.center {width: 100%;}
+    .left, .right {width: 100%;}
+    div#skills.box{width: 100%;}
+}
+@media only screen and (max-width : 640px) {
+    #contact {width: 100%;}
+    #education {width: 100%;}
+    .box h3 {font-size: 1.2em;}
+    #overview p {margin-top: 1.5em;}
+    div.contact-list-container {margin-top: 1.5em;}
+    img#m {margin-top: 1.5em;}
+    img#plus {margin-left: 1.5em;}
+    p.blue-text b{font-size: .9em;}
+    .left-mini {width: 100%; text-align: left; padding: .5em; padding-top: 1.2em; margin-right: 0;}
+    .seventy-px-wide {float: left; padding: 1em; padding-top: 0; padding-bottom: 0;}
+    .list {margin-left: 10%;}
+}
+@media only screen and (max-width : 430px) {
+    img#plus {margin-left: .5em;}
+    .list {width: 90%; margin-left: 3%;}
+    .center h1 {font-size: 2em;}
+    .seventy-px-wide {width: 50px;}
+    
+}

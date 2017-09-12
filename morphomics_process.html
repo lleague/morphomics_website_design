@@ -1,0 +1,387 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Designing Morphomics | Lauren League</title>
+<link rel="stylesheet" type="text/css" media="screen" href="css/portfolio-style.css">
+<link rel="stylesheet" type="text/css" media="screen" href="css/nav.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-89091551-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body>
+    
+    <div id="full">
+    <div id="story-page" class="box">
+            <img class="full"src="images/stu/chromosome-header.png">
+            <h1>Designing Morphomics</h1>
+            <div id="subtitle">
+            <h3>Creating a digital product for The University of Michigan&#39;s precision medicine research.</h3>
+            </div>
+        <div class="text-container" id="Main">
+            <section id="body_1">
+                <h2>Background</h2>
+                <hr class="story">
+                <p>This project was for an organization nested within the University of Michigan's Department of Surgery. I designed and developed this over the course of one year with the occasional assistance of a content writer.</p>
+                <p>For the curious, here's a pic of my information architecture for organizing the entire department, but today I'm just going to show you how I designed and developed the Morphomics site.</p>
+                <img src="images/stu/stu-information-architecture.png">
+            </section> <!-- end of #background -->
+             <section id="body_2">
+                <h2>Challenges</h2>
+                <hr class="story">
+                <p>To create the Morphomics site, there were a few exciting challenges that required me to turn up my problem-solving game&#58;</p>
+                <ol>
+                    <li><b>Pioneers in the Field.</b> This cutting-edge precision medicine research has never been done before, therefore there are no similar sites that I could draw inspiration from.</li>
+                    <li><b>Lots of Medical Jargon.</b> Organizing the content that was filled with medical jargon without a background in medicine.</li>
+                    <li><b>Organizational Issues</b> The site needed to include a few other projects that were strongly related to Morphomics, yet were completely separate entities.</li>
+                    <li><b>Branding Problems.</b> I had to create this site with it's own distinct branding, yet still be a part of the overall University of Michigan brand.</li>
+                    <li><b>A Team of One.</b> There were no other designers or developers in my department to critique my work or check my code.</li>
+                </ol>
+                <p>These challenges made this project difficult, but not impossible.</p> 
+            </section> <!-- end of #challenge -->
+            <section id="body_3">
+                <h2>Defining the Problem</h2>
+                <hr class="story">
+                    <p>To get to the value of Morphomics, I asked Dr. Wang (the head of the department) what types of problems his Morphomics research solved. He had quite a few answers, but I'll list three here to give you the gist&#58;</p>
+                    <ul>
+                        <li>Helps auto engineers understand the bodily differences in a population to make vehicles safer.</li>
+                        <li>Characterizes the variation in a population, enabling the design of better medical devices.</li>
+                        <li>More precise evaluation of a patient for drug dosing and measurement of treatment success.</li>
+                    </ul>
+                <p>All of these solutions help solve a common problem&#58; <b>Current medical and engineering practices are based on one type of human body (the 6'0 180lb male) and a lot of guesswork. This results in a needless loss of life.</b></p>
+                <p>Morphomics solves this problem by showing us the exact body measures and variability in a population. This removes guessing and allows precise treatment for specific body types which saves time, money, and lowers risks for patients.</p>
+            </section> <!-- end of #audience-research -->
+
+            <section id="body_4">
+                <h2>Audience Research</h2>
+                <hr class="story">
+                <img class="sixty" src="images/stu/stu_sketch1.png">
+                <div class="block-text thirty-five margin-left">
+                    <p>I began asking around the department WHO would want to learn about Morphomics and WHY. My notes are to the left.</p>
+                    <p>My idea was to organize the information based on cross-referencing the content we had with our audience&#39;s needs. I worked with members of our department who interacted directly with our audience to get this data.</p>
+                    <p>From making this cross-sectional table, I learned that the most in-demand piece of information we could offer to our Morphomics audience were the CT scans of trauma patients (highlighted  in pink to the left). I learned later through user testing that <b>what they actually wanted was the data from the CT scans, not the scans themselves.</b></p>
+                </div>
+                <p>Later I organized all of my audience research into this neat table.</p>
+                <table class="stu-table" style="width: 100%;">
+                <tr>
+                    <th>type</th>
+                    <th>industry</th>
+                    <th>age range</th>
+                    <th>browser</th>
+                    <th>goals</th>
+                </tr>
+                <tr>
+                    <td>Researchers</td>
+                    <td>medical, automotive, biomedical</td>
+                    <td>35-45</td>
+                    <td>chrome, safari</td>
+                    <td>Find data and publications that will further their own research</td>
+                </tr>
+                <tr>
+                    <td>Medical Students</td>
+                    <td>medical, automotive, biomedical</td>
+                    <td>21-40</td>
+                    <td>chrome, safari, firefox</td>
+                    <td>Learning about precision medicine, combining data with scans</td>
+                </tr>
+                <tr>
+                    <td>Surgeons</td>
+                    <td>Medical</td>
+                    <td>35-65</td>
+                    <td>chrome, ie, safari</td>
+                    <td>To collaborate with us, combine their research with ours</td>
+                </tr>
+                <tr>
+                    <td>Hospital Policymakers</td>
+                    <td>Medical</td>
+                    <td>35-55</td>
+                    <td>ie, chrome, safari</td>
+                    <td>To find out how to reduce costs and patient post-op hospital bed time</td>
+                </tr>
+                <tr>
+                    <td>Patients</td>
+                    <td>Any</td>
+                    <td>50+</td>
+                    <td>ie, safari, chrome, firefox</td>
+                    <td>To find out how to reduce their risks for an upcoming surgery</td>
+                </tr>
+                <tr>
+                    <td>Pharmaceutical Companies</td> 
+                    <td>Pharmaceutical Research</td> 
+                    <td>35-55</td> 
+                    <td>ie, chrome</td> 
+                    <td>Interested in precision medicine research that will make drugs more effective</td> 
+                </tr>
+                <tr>
+                    <td>Device Manufacturers</td>
+                    <td>Biomedical</td>
+                    <td>26-42</td>
+                    <td>chrome, safari, ie</td>
+                    <td>How to reduce complication when a device is installed, how to save on cost of device</td>
+                </tr>
+                <tr>
+                    <td>Auto Designers</td>
+                    <td>Automotive</td>
+                    <td>30-60</td>
+                    <td>safari, chrome, firefox</td>
+                    <td>Design safety measures to save the most lives accounting for bodily differences</td>
+                </tr>
+                <tr>
+                    <td>Auto Engineers</td>
+                    <td>Automotive</td>
+                    <td>35-65</td>
+                    <td>chrome, ie</td>
+                    <td>Acceleration/force of different body types, also how to collaborate with us in Case Review</td>
+                </tr>
+                <tr>
+                    <td>Triage, EMT</td>
+                    <td>Medical, Government</td>
+                    <td>22-40</td>
+                    <td>chrome, ie</td>
+                    <td>Need to look at our policy pdf for emergency responders</td>
+                </tr>
+                <tr>
+                    <td>Government Policymakers</td>
+                    <td>Government</td>
+                    <td>40-65</td>
+                    <td>ie, chrome</td>
+                    <td>Need to look at our policy pdf for emergency responders</td>
+                </tr>
+                <tr>
+                    <td>Government Grant Personnel</td>
+                    <td>Government</td>
+                    <td>40-65</td>
+                    <td>ie, chrome</td>
+                    <td>Looking for the best way to prevent injury and investing resources into that.</td>
+                </tr>
+            </table>
+
+
+            <section id="body_5">
+                <h2>Information Architecture</h2>
+                <hr class="story">
+                <p>I worked with Dr. Wang (the department head), June (the project manager) and Kristen (the content writer) to get this nailed down. Together we went over everything a user would want out of Morphomics.</p>
+                <img class="seventy-five" src="images/stu/morphomics-information-architecture.png">
+                <div class="block-text twenty margin-left">
+                <p>I sorted all of the "content chunks" that we came up with into five groups, which you can see to the left. This later became the menu system for the site.</p>
+                </div>
+            </section>
+
+            <section id="body_6">
+                <h2>Low-fidelity Mockup</h2>
+                <hr class="story">
+                <img class="sixty-five" src="images/stu/morphomics-low-fi.png">
+                <div class="block-text thirty margin-left">
+                    <p>This was my very first mockup of the home page.</p>
+                    <p>My plan was to have a JavaScript slideshow front and center that changed images every couple of seconds, each with its own Morphomics use case. The idea was to give a snapshot of the value of this research, even if the user only stayed on this page for a few seconds.</p>
+                    <p>Right underneath that, I thought we'd describe what Morphomics actually is, in order to educate curious new users.</p>
+                    <p>Then I listed the three projects that were spawned from Morphomics -- RAMP (Reference Analytic Morphomics Population), MAG (Morphomics Analysis Group), and MSHOP (Michigan Surgical and Health Optimization Program).</p>
+                    <p>I followed that with the Resources section, which I assumed would be useful to a user who just wanted a snapshot of what we offer.</p>
+                    <p>Then finally, the call to action&#58; Let&#39;s Collaborate. This is what the department wanted from medical and auto audiences -- their biometrics data.</p>
+                </div>
+                <p class="margin-top">Below you can see how I created a low-fidelity mockup for the entire information architecture. You can see a more fleshed out version of the Morphomics homepage is at the bottom-center.</p>
+                <p>I mapped out user journeys with red thread to find out which pages would be viewed the most, and thus, which ones I needed to spend the most time on.</p>
+                <img src="images/stu/low-fi-mockup-stu.png">
+
+            </section>
+            <section id="body_7">
+                <h2>Branding</h2>
+                <hr class="story">
+                <p>The challenge here was that I was anchored with University of Michigan branding, so I had to make sure whatever colors I chose fit in with maize, blue, and the block M.</p>
+                <img class="seventy" src="images/stu/morphomics-branding.png">
+                <div class="block-text twenty-five margin-left">
+                    <p>I chose this color pallet because I noticed the dull blue/green in a lot of medical microscopy. Perfect for a precision medicine site, or so I thought.</p>
+                    <p>I created the Morphomics logo based on a constant in  all of our CT scans -- the vertebrae. Traced and abstracted, it even forms a vague &#34;M.&#34;</p>
+                    <p>Our department gets its data is by examining CT scans in a spinal stack, so I stacked the simplified vertebrae M shapes on top of each other to create a meaningful logo.</p>
+                </div>
+            </section>
+            <section id="body_8">
+                <h2>High-fidelity Mockup</h2>
+                <hr class="story">
+                <p>I combined the information architecture, low fidelity mockup, and branding to create a high-fidelity mockup in Illustrator. 
+                <img class="full" src="images/stu/morphomics-high-fi.png">
+            </section>
+            <section id="body_9">
+                <h2>Making a Prototype</h2>
+                <hr class="story">
+                    <p>A snapshot of my early html and css. Don’t look at it too long, your eyes might burn out. </p>
+                    <img src="images/stu/morphomics-code-snapshot.png">
+                    <p>At the time, I was still a beginner when it came to web development, so I made (and later fixed) a lot of mistakes with this site, including&#58;</p>
+                    <ul>
+                        <li>The source images were too big and changed the dimensions in the CSS, slowing down the load time</li>
+                        <li>Made all of my icons .svg files, which was a nightmare when it came to making the site responsive (forces the browser to re-draw them at every screen width, slowing the site down to a crawl)</li>
+                        <li>Repeated myself a lot in the CSS, making finding and changing things difficult</li>
+                        <li>Did not comment my code nearly as much as I should have</li>
+                        <li>Repeated my JavaScript in every html document instead of linking to a .js file</li>
+                        <li>Made margins and padding in pixels instead of em&#39;s
+                        <li>Set image sizes to pixels instead of percentages, making reformatting for smaller-sized screens tedious</li>
+                    </ul>
+                    <p>The list could go on and on. Just know that after a few weeks in this quagmire, I fixed all of these, and made it work how I intended across all modern browsers and device sizes (even IE11 on the hospital's core-imaged machines).</p>
+                    <p>My first prototype ended up looking like this&#58;</p>
+                    <img src="images/stu/morphomics-mockup-1.png">
+            </section> <!-- end of #gameplay -->
+
+            <section id="body_10">
+                <h2>User Test</h2>
+                <hr class="story">
+                    <p>I pushed it to my Raspberry Pi and then shared the link with various users in our department: med students, researchers, and surgeons. They gave me valuable feedback, including&#58;</p>
+                    <ul>
+                        <li>"It's too big."</li>
+                        <li>"The menu and title take up too much space"</li>
+                        <li>"The value statement is hidden below the page fold."</li>
+                        <li>"We need to have more obvious U-M branding."</li>
+                        <li>"So... what exactly is Morphomics?"</li>
+                        <li>"We need to encourage people to collaborate with us more."</li>
+                        <li>"Dr. Wang needs a biography page to show how the department developed."</li>
+                        <li>"We need to tie this in with all of the other research Dr. Wang has done."</li>
+                    </ul>
+                    <p>And then I showed it to Dr. Wang. I had a hover effect on the buttons that changed them from a subtle green to a bright red. He clicked around for a few minutes, and I noticed that he wasn’t getting the visual cue from hovering over the buttons.</p>
+                    <p>"What color is this?" he asked.<br>"Red." I answered<br>"Oh! I can't see that. I'm red/green colorblind!"</p>
+                    <p>After that, I found out that <b>It's highly common for surgeons to be red/green colorblind.</b> And surgeons were a major part of my audience, so I needed to rework the branding.
+            </section> <!-- end of #user-test-1 -->
+            <section id="body_11">
+                <h2>Rebranding</h2>
+                <hr class="story">
+                <div class="block-text twenty-five">
+                    <p>I chose analogous colors to the required maize and blue, incorporating orange, greens, a bright blue, and a slight purple/periwinkle color.</p>
+                    <p>(note: It was okay to include green, as long as I didn’t put it against a red.)</p>
+                <p>I chose to replace Quattrocento Sans because I noticed that some users had to squint to read the longer paragraphs.</p>
+                </div>
+                    <img class="seventy"src="images/stu/overall-branding.png">
+                <p>Gill Sans was a much more effective type for this site because even though it’s technically a sans-serif font, it still has a very slight serif, which helps when reading body text. The rounded letters and high x-height were also appealing for smaller font sizes.</p>
+            </section> 
+
+            <section id="body_12">
+                <h2>Revisions</h2>
+                <hr class="story">
+                <p>Based on the user feedback, I made the menu smaller and added some icons to it. I also made the value statement above the page fold.</p>
+                <img src="images/stu/morphomics-mockup-2.png">
+                <p class="margin-top">I applied this new branding to our Morphomics data pages (one of which you see below) and gave that series of pages a clean, <a href="https://en.wikipedia.org/wiki/Knolling">Knolling</a> look.</p>
+                <img class="seventy" src="images/stu/ramp-mockup.png">
+                <div class="block-text twenty-five margin-left">
+                    <p>It was important that these data pages received the most design attention because according to Google Analytics, they were the most visited pages on the entire site.</p>
+                    
+                    <p>I wrote some JavaScript that lets the user interact with the form on this page to find the values from the chart on the left. Each Data Lookup calculator runs on a different set of values depending on which measure the user chooses (AP Body Depth @L4, Trabecular BMD @T10, etc). This makes interacting with our data very easy for researchers.</p>
+                </div>
+            </section> <!-- end of #revisions -->
+            
+            <section id="body_13">
+                <h2>Measuring Success</h2>
+                <hr class="story">
+                <p>After I updated the branding on Morphomics, I installed a Heatmap plugin to see how effective it was and where exactly my users were clicking. I let it run for about a month.</p>
+                <img src="images/stu/morphomics-mockup-2-heatmap.png">
+                <p>This data told me a few things:</p>
+                <ol>
+                    <li>Users were clicking on the "back" button on the slideshow a lot, which meant I needed to slow down the slide changing speed.</li>
+                    <li>They wanted to know more details about the text floating on the slideshow, as they were clicking on that black box quite a bit</li>
+                    <li>A larger-than-expected number of users were clicking on the "about" link in the menu, meaning that they wanted to know what Morphomics actually was.</li>
+                </ol>
+                <p><b>The homepage was doing its job; it was getting their attention and making them curious.</b></p> 
+            </section> <!-- end of #pivot -->
+                           
+
+        </div> <!-- end of #jump-to -->
+
+        
+        </div> <!-- end of #story-page -->
+        <div class="jump-to-container">
+        <div id="jump-to" class="box">
+            <div class="center">
+                <h2>Process</h2>
+                <a id="side_1"  onClick="$('html, body').animate({scrollTop: $('#body_1').offset().top-100}, 250);">Background</a>
+                <a id="side_2"  onClick="$('html, body').animate({scrollTop: $('#body_2').offset().top-100}, 250);">Challenges</a>
+                <a id="side_3"  onClick="$('html, body').animate({scrollTop: $('#body_3').offset().top-100}, 250);">Defining the Problem</a>
+                <a id="side_4"  onClick="$('html, body').animate({scrollTop: $('#body_4').offset().top-100}, 250);">Audience Research</a>
+                <a id="side_5"  onClick="$('html, body').animate({scrollTop: $('#body_5').offset().top-100}, 250);">Information Architecture</a>
+                <a id="side_6"  onClick="$('html, body').animate({scrollTop: $('#body_6').offset().top-100}, 250);">Low-fidelity Mockup</a>
+                <a id="side_7"  onClick="$('html, body').animate({scrollTop: $('#body_7').offset().top-100}, 250);">Branding</a>
+                <a id="side_8"  onClick="$('html, body').animate({scrollTop: $('#body_8').offset().top-100}, 250);">High-fidelity Mockup</a>
+                <a id="side_9"  onClick="$('html, body').animate({scrollTop: $('#body_9').offset().top-100}, 250);">Making a Prototype</a>
+                <a id="side_10" onClick="$('html, body').animate({scrollTop: $('#body_10').offset().top-100}, 250);">User Test</a>
+                <a id="side_11" onClick="$('html, body').animate({scrollTop: $('#body_11').offset().top-100}, 250);">Rebranding</a>
+                <a id="side_12" onClick="$('html, body').animate({scrollTop: $('#body_12').offset().top-100}, 250);">Revisions</a>
+                <a id="side_13" onClick="$('html, body').animate({scrollTop: $('#body_13').offset().top-100}, 250);">Measuring Success</a>
+            </div>
+            </div>
+            </div>
+            </div> <!-- end #page -->
+</body>
+<script>
+//makes the jump-to section light up according to what section the user is looking at.
+    $(document).ready(function () {
+            
+        //Chanage these to match your doc layout
+        var startchange = $("#Main");
+        var side = ["side_1","side_2","side_3","side_4", "side_5", "side_6", "side_7", "side_8", "side_9", "side_10", "side_11", "side_12", "side_13", "side_14"];
+        var body = ["body_1","body_2","body_3","body_4", "body_5", "body_6", "body_7", "body_8", "body_9", "body_10", "body_11", "body_12", "body_13", "body_14"];
+
+
+            //$('html, body').animate({scrollTop: $("#body_5").offset().top}, 2000);
+
+
+        if (startchange.length) {
+                $(document).scroll(function () {
+
+                body.forEach(function(value,i) {
+                    lower = $('#' + body[i]).offset().top; 
+                    
+                    if(i>=1){
+                        upper = $('#' + body[i-1]).offset().top; 
+                    } else {
+                        upper = -1;
+                    }
+
+                    //alert($(this).scrollTop());
+                    //alert("Upper: "+upper+"  Lower: "+lower);
+
+
+                    if ( ($(this).scrollTop() > upper) && ($(this).scrollTop() < lower)){
+                        $('#' + side[i]).css({'background-color': '#4F60B2', 'color': '#fff'});
+                    } else {
+                        $('#' + side[i]).css({'background-color': 'transparent', 'color': '#555'});
+                    }
+
+                });
+
+
+            });
+        }
+
+    
+    });
+
+</script>
+
+
+<script>
+//lets users click on the entire div instead of just the <a href>.
+$(".clickable").click(function() {
+  window.location = $(this).find("a").attr("href"); 
+  return false;
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    $("#nav-mobile").html($("#nav-main").html());
+    $("#nav-trigger span").click(function(){
+        if ($("nav#nav-mobile ul").hasClass("expanded")) {
+            $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
+            $(this).removeClass("open");
+        } else {
+            $("nav#nav-mobile ul").addClass("expanded").slideDown(250);
+            $(this).addClass("open");
+        }
+    });
+});
+</script>
+
+</html>
